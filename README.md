@@ -31,15 +31,13 @@ If you're new to Python, here's a step-by-step guide to running the script:
     - `openai`: The OpenAI Python client library, which allows you to interact with the OpenAI API for various AI models including GPT-3.
     - `dotenv`: A Python package that reads key-value pairs from a `.env` file and can set them as environment variables.
     - `os`: A standard library in Python that provides a way to perform OS-dependent functions such as reading or writing environment variables.
-     The 'os' module is part of the standard library of Python, so you do not need to install it separately. It comes pre-installed with Python and provides a way of using operating system dependent functionality like reading or writing to a filesystem, manipulating paths, and more.
-     
-     You can use it directly in your scripts without any additional installation steps. Just make sure you have Python installed on your system, and you can import and use os directly.
+     The 'os' module is part of the standard library of Python, so you do not need to install it separately. It comes pre-installed with Python and provides a way of using operating system dependent functionality like reading or writing to a filesystem, manipulating paths, and more. You can use it directly in your scripts without any additional installation steps. Just make sure you have Python installed on your system, and you can import and use os directly.
 
 4. **About the Script**:
    
    This script integrates Whisper for audio transcription and OpenAI for text summarization, along with saving the results to a text file. The code is commented in everyline so that it can be easely understood.
 
-   An importand notes:
+   Importand notes:
 
    - To learn to work with whisper library please go to https://github.com/openai/whisper
    - The script is using "gpt-4-1106-preview" model, since it uses a context window of 128,000 tokens.
@@ -66,7 +64,7 @@ If you're new to Python, here's a step-by-step guide to running the script:
    - Navigate to the directory where you saved your script, if you're not already there.
    - Run the script:
      ```
-     python record_audio.py
+     python get-summary-from-audio.py
      ```
    - The script will execute, and when it finishes, you should see the file of the summary in the summaries folder.
 
